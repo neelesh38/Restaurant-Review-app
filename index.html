@@ -19,18 +19,18 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a href="/" tabIndex="1">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map" role="application" aria-label="locations" ></div>
+      <div id="map" role="application" aria-label="locations" tabIndex="-1"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabIndex="1">
           <option value="all">All Neighborhoods</option>
         </select>
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
@@ -48,7 +48,7 @@
 
 
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017 <a href="/" tabIndex="1"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
 </body>
